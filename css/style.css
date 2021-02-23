@@ -972,6 +972,7 @@ a.elementor-button, .elementor-button:hover {
 /******** header css here *********/
 .header_part {
   background-color: #fff;
+  border-bottom: 1px solid #F5F5F5;;
 }
 .header_part .sub_header {
   padding: 9px 0;

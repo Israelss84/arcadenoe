@@ -7,8 +7,10 @@
         const topnav = $('.sub_header').height(); 
         const header_part = $('.header').height(); 
         if (window_top < topnav) {
+            $('.header_part .sub_header').css('marginBottom', 0);
             $('.header').removeClass('menu_fixed animated fadeInDown');
         } else {
+            $('.header_part .sub_header').css('marginBottom', header_part);
             $('.header').addClass('menu_fixed animated fadeInDown');
         }
     });
