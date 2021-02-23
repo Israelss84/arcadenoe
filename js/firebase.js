@@ -27,7 +27,7 @@ function filename(){
     return rutaRelativa;  
 }
 function getIP(json) {
-    if(json.ip != '201.145.126.5'){
+    if(json.ip != '201.145.126.4'){
         db.collection('vistas').doc().set({
             fecha,
             hora,
