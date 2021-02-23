@@ -3,11 +3,13 @@
 
     //sticky menu
     $(window).on('scroll', function () {
-        var window_top = $(window).scrollTop() + 1;
-        if (window_top > 50) {
-            $('.header').addClass('menu_fixed animated fadeInDown');
-        } else {
+        var window_top = $(window).scrollTop();
+        const topnav = $('.sub_header').height(); 
+        const header_part = $('.header').height(); 
+        if (window_top < topnav) {
             $('.header').removeClass('menu_fixed animated fadeInDown');
+        } else {
+            $('.header').addClass('menu_fixed animated fadeInDown');
         }
     });
 
