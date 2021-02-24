@@ -27,15 +27,15 @@ function filename(){
     return rutaRelativa;  
 }
 function getIP(json) {
-    if(json.ip != '201.145.126.4'){
-        var ip = json.ip;
-        db.collection('vistas').doc().set({
-            fecha,
-            hora,
-            navegador,
-            pagina,
-            ip
-        });
-    }
+    
+    var ip = json.ip;
+    db.collection('vistas').doc().set({
+        fecha,
+        hora,
+        navegador,
+        pagina,
+        ip
+    });
+    
 }
 
